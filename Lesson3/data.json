@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Xuân Tú",
+        "age": 18,
+        "gender": "male",
+        "school": "Thành Đô"
+    },
+    {
+        "name": "Minh Nhật",
+        "age": 14,
+        "gender": "male",
+        "school": "Ngô Quyền"
+    },
+    {
+        "name": "Khải Hoàng",
+        "age": 14,
+        "gender": "male",
+        "school": "Vĩnh Hưng"
+    },
+    {
+        "name": "Quang Huy",
+        "age": 15,
+        "gender": "male",
+        "school": "Vinschool"
+    },
+    {
+        "name": "Bảo Lâm",
+        "age": 15,
+        "gender": "male",
+        "school": "Vinschool"
+    }
+]
