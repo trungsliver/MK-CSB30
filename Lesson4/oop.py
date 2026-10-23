@@ -92,3 +92,60 @@ class PlayerManager:
             print('New player added successfully!')
         except:
             print('Error: Cant add new player!')
+
+    # Find player by ID
+    def find_player_by_id(self, player_id):
+        try:
+            # Chuyển player_id sang int (số nguyên)
+            player_id = int(player_id)
+            # Duyệt danh sách object
+            for player in self.players_list:
+                if player.id == player_id:
+                    # Tìm thấy -> return object player
+                    return player
+            # Nếu không tìm thấy -> return None
+            return None
+        except:
+            print('Error: Cant find player!')
+
+    # Update player by ID
+    def update_player_by_id(self, player_id):
+        try:
+            player = self.find_player_by_id(player_id)
+            if player:
+                new_id = player_id
+                # Nhập thông tin player mới
+                new_name = input('Enter player name: ')
+                new_dob = input('Enter player DOB (YYYY-MM-DD): ')
+                new_region = input('Enter player region: ')
+                new_position = input('Enter player position: ')
+                new_club = input('Enter player club: ')
+                new_worth = input('Enter player worth (optional): ')
+                # Tạo object player mới
+                new_player = Player(new_id, new_name, new_dob, new_region, new_position, new_club, new_worth)
+                # Cập nhật thông tin player
+                player.update(new_player.__dict__)
+                # Chuyển từ object sang dictionary và ghi vào file json
+                self.object_to_dict()
+                # Thông báo thành công
+                print('Player updated successfully!')
+            else:
+                print('Player not found.')
+        except:
+            print('Error: Cant update player!')
+
+    # Delete player by ID
+    def delete_player_by_id(self, player_id):
+        try:
+            player = self.find_player_by_id(player_id)
+            if player:
+                # Xóa player khỏi danh sách object
+                self.players_list.remove(player)
+                # Chuyển từ object sang dictionary và ghi vào file json
+                self.object_to_dict()
+                # Thông báo thành công
+                print('Player deleted successfully!')
+            else:
+                print('Player not found.')
+        except:
+            print('Error: Cant delete player!')

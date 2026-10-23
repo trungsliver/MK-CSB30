@@ -33,7 +33,22 @@ while True:
         db.show_all_players()
     elif choice == '2':
         db.add_player()
+    elif choice == '3':
+        player_id = input('Enter player ID to find: ')
+        player = db.find_player_by_id(player_id)
+        if player:
+            print('Player found:')
+            player.show_info()
+        else:
+            print('Player not found.')
+    elif choice == '4':
+        player_id = input('Enter player ID to update: ')
+        db.update_player_by_id(player_id)
+    elif choice == '5':
+        player_id = input('Enter player ID to delete: ')
+        db.delete_player_by_id(player_id)
     elif choice == '6':
         break
     else:
         print('Invalid choice. Please try again.')
+
