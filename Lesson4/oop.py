@@ -65,3 +65,30 @@ class PlayerManager:
     def show_all_players(self):
         for player in self.players_list:
             player.show_info()
+
+    # Thêm 1 player mới
+    def add_player(self):
+        if len(self.players_dict) > 0:
+            # id của player cuối cùng + 1
+            new_id = self.players_dict[-1]['id'] + 1
+        else:
+            new_id = 1
+        # Nhập thông tin player mới
+        new_name = input('Enter player name: ')
+        new_dob = input('Enter player DOB (YYYY-MM-DD): ')
+        new_region = input('Enter player region: ')
+        new_position = input('Enter player position: ')
+        new_club = input('Enter player club: ')
+        new_worth = input('Enter player worth (optional): ')
+        
+        try:
+            # Tạp object player mới
+            new_player = Player(new_id, new_name, new_dob, new_region, new_position, new_club, new_worth)
+            # Add vào danh sách object
+            self.players_list.append(new_player)
+            # Chuyển từ object sang dictionary và ghi vào file json
+            self.object_to_dict()
+            # Thông báo thành công
+            print('New player added successfully!')
+        except:
+            print('Error: Cant add new player!')

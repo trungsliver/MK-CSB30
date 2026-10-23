@@ -15,4 +15,25 @@ print('Dictionary list:', len(db.players_dict))
 
 # Hiển thị toàn bộ thông tin player
 print('\nDanh sách player:')
-db.show_all_players()
+# db.show_all_players()
+
+# Menu tùy chọn
+while True:
+    print("\n===== Player Management Menu =====")
+    print('1. Show all players')
+    print('2. Add new player')
+    print('3. Find player by ID')
+    print('4. Update player by ID')
+    print('5. Delete player by ID')
+    print('6. Exit')
+    print('==================================')
+    choice = input('Enter your choice: ')
+
+    if choice == '1':
+        db.show_all_players()
+    elif choice == '2':
+        db.add_player()
+    elif choice == '6':
+        break
+    else:
+        print('Invalid choice. Please try again.')
