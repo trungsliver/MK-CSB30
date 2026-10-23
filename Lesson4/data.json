@@ -1,0 +1,191 @@
+[
+    {
+        "id": 1,
+        "name": "Cristiano Ronaldo",
+        "dob": "1985-02-05",
+        "position": "LW",
+        "region": "Portugal",
+        "club": "Real Madrid",
+        "worth": 300000000
+    },
+    {
+        "id": 2,
+        "name": "Lionel Messi",
+        "dob": "1987-06-24",
+        "position": "RW",
+        "region": "Argentina",
+        "club": "Inter Miami",
+        "worth": 250000000
+    },
+    {
+        "id": 3,
+        "name": "Kylian Mbappe",
+        "dob": "1998-12-20",
+        "position": "ST",
+        "region": "France",
+        "club": "Real Madrid",
+        "worth": 180000000
+    },
+    {
+        "id": 4,
+        "name": "Neymar Jr",
+        "dob": "1992-02-05",
+        "position": "LW",
+        "region": "Brazil",
+        "club": "Santos",
+        "worth": 100000000
+    },
+    {
+        "id": 5,
+        "name": "Erling Haaland",
+        "dob": "2000-07-21",
+        "position": "ST",
+        "region": "Norway",
+        "club": "Manchester City",
+        "worth": 80000000
+    },
+    {
+        "id": 6,
+        "name": "Kevin De Bruyne",
+        "dob": "1991-06-28",
+        "position": "CM",
+        "region": "Belgium",
+        "club": "Napoli",
+        "worth": 70000000
+    },
+    {
+        "id": 7,
+        "name": "Luka Modric",
+        "dob": "1985-09-09",
+        "position": "CM",
+        "region": "Croatia",
+        "club": "AC Milan",
+        "worth": 60000000
+    },
+    {
+        "id": 8,
+        "name": "Mohamed Salah",
+        "dob": "1992-06-15",
+        "position": "RW",
+        "region": "Egypt",
+        "club": "Liverpool",
+        "worth": 90000000
+    },
+    {
+        "id": 9,
+        "name": "Harry Kane",
+        "dob": "1993-07-28",
+        "position": "ST",
+        "region": "England",
+        "club": "Bayern Munich",
+        "worth": 90000000
+    },
+    {
+        "id": 10,
+        "name": "Vinicius Junior",
+        "dob": "2000-07-12",
+        "position": "LW",
+        "region": "Brazil",
+        "club": "Real Madrid",
+        "worth": 120000000
+    },
+    {
+        "id": 11,
+        "name": "Jude Bellingham",
+        "dob": "2003-06-29",
+        "position": "CAM",
+        "region": "England",
+        "club": "Real Madrid",
+        "worth": 100000000
+    },
+    {
+        "id": 12,
+        "name": "Robert Lewandowski",
+        "dob": "1988-08-21",
+        "position": "ST",
+        "region": "Poland",
+        "club": "Barcelona",
+        "worth": 80000000
+    },
+    {
+        "id": 13,
+        "name": "Sadio Mane",
+        "dob": "1992-04-10",
+        "position": "LW",
+        "region": "Senegal",
+        "club": "Al-Nassr",
+        "worth": 70000000
+    },
+    {
+        "id": 14,
+        "name": "Son Heung-min",
+        "dob": "1992-07-08",
+        "position": "LW",
+        "region": "South Korea",
+        "club": "Los Angeles FC",
+        "worth": 50000000
+    },
+    {
+        "id": 15,
+        "name": "Virgil van Dijk",
+        "dob": "1991-07-08",
+        "position": "CB",
+        "region": "Netherlands",
+        "club": "Liverpool",
+        "worth": 50000000
+    },
+    {
+        "id": 16,
+        "name": "Rodri",
+        "dob": "1996-06-22",
+        "position": "CDM",
+        "region": "Spain",
+        "club": "Manchester City",
+        "worth": 80000000
+    },
+    {
+        "id": 17,
+        "name": "Thibaut Courtois",
+        "dob": "1992-05-11",
+        "position": "GK",
+        "region": "Belgium",
+        "club": "Real Madrid",
+        "worth": 40000000
+    },
+    {
+        "id": 18,
+        "name": "Alisson Becker",
+        "dob": "1992-10-02",
+        "position": "GK",
+        "region": "Brazil",
+        "club": "Liverpool",
+        "worth": 45000000
+    },
+    {
+        "id": 19,
+        "name": "Bukayo Saka",
+        "dob": "2001-09-05",
+        "position": "RW",
+        "region": "England",
+        "club": "Arsenal",
+        "worth": 85000000
+    },
+    {
+        "id": 20,
+        "name": "Phil Foden",
+        "dob": "2000-05-28",
+        "position": "CAM",
+        "region": "England",
+        "club": "Manchester City",
+        "worth": 75000000
+    },
+    {
+        "id": 21,
+        "name": "Achraf Hakimi",
+        "dob": "1998-11-04",
+        "position": "RB",
+        "region": "Morocco",
+        "club": "Paris Saint-Germain",
+        "worth": 65000000
+    }
+]
