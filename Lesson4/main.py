@@ -12,3 +12,7 @@ print('\nSau khi convert sang object:')
 db.dict_to_object()
 print('Object list:', len(db.players_list))
 print('Dictionary list:', len(db.players_dict))
+
+# Hiển thị toàn bộ thông tin player
+print('\nDanh sách player:')
+db.show_all_players()

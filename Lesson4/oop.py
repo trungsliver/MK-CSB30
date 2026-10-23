@@ -60,3 +60,8 @@ class PlayerManager:
         # Ghi dữ liệu vào file json
         data_io.write_json_data(self.file_path, self.players_dict)
         return self.players_dict
+
+    # Hiển thị toàn bộ thông tin player
+    def show_all_players(self):
+        for player in self.players_list:
+            player.show_info()
