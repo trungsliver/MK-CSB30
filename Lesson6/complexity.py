@@ -50,3 +50,6 @@ while guess != special_number:
 
 print('Chúc mừng bạn đã đoán đúng số đặc biệt:', special_number)
 print('Số lần bạn đoán là:', count)
+
+# so sánh độ phức tạp (thời gian thực hiện)
+    # O(n^2) > O(n) > O(log n) > O(1)
