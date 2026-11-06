@@ -29,3 +29,29 @@ def binary_search(arr, target):         # O(log n)
         else:
             right = mid - 1  # Tìm kiếm nửa bên trái
     return -1  # Trả về -1 nếu không tìm thấy
+
+# ============ SO SÁNH HIỆU SUẤT ============
+import time, random
+
+def measure_time(func, arr, target):
+    # Thời gian bắt đầu
+    start_time = time.time()
+    # thực hiện hàm tìm kiếm
+    func(arr, target)
+    # Thời gian kết thúc
+    end_time = time.time()
+    # Tính thời gian thực hiện
+    return end_time - start_time
+
+# Khởi tạo 1 danh sách lớn (nhiều dữ liệu)
+random_list = [random.randint(1, 999999999) for _ in range(200000000)]  # 200 triệu phần tử
+target_value = random.choice(random_list)  # Chọn ngẫu nhiên 1 phần tử trong danh sách
+
+# Linear search
+linear_time = measure_time(linear_search, random_list, target_value)
+print(f"Thời gian tìm kiếm tuyến tính: {linear_time:.8f} giây")
+
+# Binary search
+sorted_random_list = sorted(random_list)
+binary_time = measure_time(binary_search, sorted_random_list, target_value)
+print(f"Thời gian tìm kiếm nhị phân: {binary_time:.8f} giây")
